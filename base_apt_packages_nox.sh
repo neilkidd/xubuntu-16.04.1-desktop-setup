@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function install_base_apt_packages_nox {
-  
+
   declare -a BASE_APT_PACKAGES_NOX=(
     aptitude
     autoconf
@@ -27,15 +27,13 @@ function install_base_apt_packages_nox {
     samba
     software-properties-common
     sqlite3
+    whois
     zlib1g-dev
   )
-  
+
   for element in ${BASE_APT_PACKAGES_NOX[@]}; do
     apt_install $element;
   done
-  
+
   unset BASE_APT_PACKAGES_NOX
 }
-
-
-
