@@ -2,7 +2,7 @@
 
 function install_docker_apt {
 
-  if hash docker 2>/dev/null; then
+  if command -v docker >/dev/null 2>&1; then
     echo "Docker is already installed"
   else
   	apt_quiet_update;
