@@ -35,6 +35,6 @@ install_slack_desktop;
 install_virtualbox_5_1;
 install_vagrant;
 install_x2go; #- done via x2go cmd line
-install_docker_apt; 16.04.1
+install_docker_apt; #16.04.1
 purge_apt_packages;
 final_cleanup;
