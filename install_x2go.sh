@@ -6,6 +6,8 @@ function install_x2go {
   REPO_CHECK=$(dpkg-query -W --showformat='${Status}\n' x2goserver | grep "install ok installed")
   if [ "" == "$REPO_CHECK" ]; then
 
+    apt_install software-properties-common
+
     add-apt-repository -y ppa:x2go/stable
     apt_quiet_update
     apt_install x2goserver
