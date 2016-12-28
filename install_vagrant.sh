@@ -2,7 +2,7 @@
 
 function install_vagrant {
 
-  if hash vagrant 2>/dev/null; then
+  if command -v foo >/dev/null 2>&1; then
     echo "Vagrant is already installed"
   else
     mkdir -p ~/tmp/vagrant
