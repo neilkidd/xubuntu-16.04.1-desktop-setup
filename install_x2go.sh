@@ -13,14 +13,11 @@ function install_x2go {
 
     # apt_install x2gomatebindings # if you use MATE/mubuntu
     # apt_install x2golxdebindings # if you use LXDE/lubuntu
-    
+
     # See http://askubuntu.com/questions/763597/x2go-with-ubuntu-mate-xfce-16-04-fails-to-start
     # to add the correct libs to the profile
 
     #client
     apt_install x2goclient
-
-
-
   fi
 }

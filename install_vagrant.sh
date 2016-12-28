@@ -3,7 +3,7 @@
 function install_vagrant {
 
   if command -v foo >/dev/null 2>&1; then
-    echo "Vagrant is already installed"
+    printf "Vagrant is already installed.\n"
   else
     mkdir -p ~/tmp/vagrant
     cd ~/tmp/vagrant

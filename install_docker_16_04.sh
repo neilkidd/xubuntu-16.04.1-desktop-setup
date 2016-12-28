@@ -3,7 +3,7 @@
 function install_docker_apt {
 
   if command -v docker >/dev/null 2>&1; then
-    echo "Docker is already installed"
+    printf "Docker is already installed.\"
   else
   	apt_quiet_update;
   	apt_install linux-image-extra-$(uname -r)
